@@ -48,3 +48,11 @@ Category management.
 User authentication.
 Undo/redo functionality.
 Barcode scanning integration.
+### Project Demonstration
+
+[Watch the full demo video here](https://example.com/path/to/your/video.mp4)
+
+Or, if you want to include a preview image that links to the video:
+```
+[![Video Preview Image](https://placehold.co/600x300/e0e0e0/000000?text=Click+to+Watch+Video)](https://example.com/path/to/your/video.mp4)
+```

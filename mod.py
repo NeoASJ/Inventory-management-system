@@ -7,35 +7,15 @@ from PIL import Image, ImageTk # Import Image and ImageTk from Pillow
 import tkinter.font as tkFont # Import for custom fonts
 
 class InventoryManager:
-    """
-    Think of this class as the 'brain' or 'database manager' for our inventory.
-    It handles all the important stuff behind the scenes: adding new items,
-    changing details of existing ones, removing items, and making sure all
-    our precious inventory data is saved safely to a file and loaded back up
-    when we open the app. The 'stock_value' now reflects the current monetary
-    value of items still in inventory (Current Qty * Unit Price).
-    """
+    
     def __init__(self, data_file="inventory.json"):
-        """
-        When you start the InventoryManager, this is what happens first.
-
-        Args:
-            data_file (str): This is the name of the file where all your inventory
-                             records will be kept. By default, it's 'inventory.json'.
-                             It's like the little notebook where we write everything down!
-        """
+        
         self.data_file = data_file
         self.items = {}
         self._load_data()
 
     def _load_data(self):
-        """
-        This function tries to pull all the inventory data out of our 'inventory.json' file.
-        It's like opening the notebook to see what we wrote down last time.
-        If the file isn't there, or if something went wrong while saving it last time,
-        we'll just start with an empty inventory (better safe than sorry!).
-        It now ensures that each loaded item has 'quantity', 'price', and calculates its 'stock_value'.
-        """
+        
         if os.path.exists(self.data_file):
             try:
                 with open(self.data_file, 'r') as f:
@@ -75,17 +55,7 @@ class InventoryManager:
             print(f"Oh dear! Couldn't save the inventory to '{self.data_file}': {e}")
 
     def add_item(self, name, quantity, price):
-        """
-        This is how we add a brand new item to our inventory, or update an existing one if the name matches.
-
-        Args:
-            name (str): What's the item called? (e.g., "Apple", "Laptop Charger").
-            quantity (int): How many of this item do we have in stock? (Must be a whole number).
-            price (float): How much does one of these items cost? (This is the price PER UNIT, can have decimals).
-
-        Returns:
-            str: A friendly message telling us if the item was added/updated successfully or if there was a problem.
-        """
+       
         cleaned_name = name.strip().lower()
         if not cleaned_name:
             return "Error: Please give your item a name. It can't be empty!"
@@ -120,20 +90,7 @@ class InventoryManager:
             return f"Success! Added new item '{name}' (ID: {item_id}) to your inventory."
 
     def update_item(self, item_id, new_quantity=None, new_price=None):
-        """
-        Want to change how many of an item you have in total stock, or its price? This is the function for that!
-        This function now also recalculates the 'stock_value' after any quantity or price change.
-
-        Args:
-            item_id (str): You'll need the unique ID of the item you want to change.
-            new_quantity (int, optional): If you want to change the total stock quantity, put the new number here.
-                                          Leave it as `None` if you don't want to change the quantity.
-            new_price (float, optional): If you want to change the price per unit, put the new price here.
-                                         Leave it as `None` if you don't want to change the price.
-
-        Returns:
-            str: A message indicating if the update was successful or if something went wrong.
-        """
+        
         if item_id not in self.items:
             return f"Error: Couldn't find any item with ID '{item_id}'. Are you sure that's the right one?"
 
@@ -163,7 +120,7 @@ class InventoryManager:
 
     def record_spend(self, item_id, amount_spent):
         """
-        This function records when a certain amount of an item has been 'spent' (e.g., sold, used).
+        This function records when a certain amount of an item has been 'spent' 
         It will decrease the main 'quantity' and then recalculate the 'stock_value' accordingly.
         """
         if item_id not in self.items:
@@ -185,11 +142,7 @@ class InventoryManager:
         """
         This function helps us remove an item from our inventory using its unique ID.
 
-        Args:
-            item_id (str): The unique ID of the item you want to permanently delete.
-
-        Returns:
-            str: A message telling us if the item was successfully deleted or if we couldn't find it.
+    
         """
         if item_id in self.items:
             item_name = self.items[item_id]["name"]
@@ -202,10 +155,7 @@ class InventoryManager:
     def delete_item_by_name(self, name):
         """
         Deletes an item from the inventory based on its name.
-        Args:
-            name (str): The name of the item to delete.
-        Returns:
-            str: A message indicating success or an error.
+         
         """
         cleaned_name = name.strip().lower()
         item_found = False
@@ -229,10 +179,6 @@ class InventoryManager:
     def get_item_by_name(self, name):
         """
         Retrieves an item's details based on its name (case-insensitive).
-        Args:
-            name (str): The name of the item to retrieve.
-        Returns:
-            tuple (str, dict) or None: The item's ID and details if found, otherwise None.
         """
         cleaned_name = name.strip().lower()
         for item_id, details in self.items.items():
@@ -244,28 +190,13 @@ class InventoryManager:
     def get_all_items(self):
         """
         Need to see everything in your inventory? This function gives you a list of all items.
-
-        Returns:
-            dict: A copy of our 'items' dictionary. We return a copy to prevent
-                  anything outside this class from accidentally changing our main inventory data.
         """
         return self.items.copy()
 
 class InventoryApp:
-    """
-    This is where the magic happens for the user! This class builds and manages
-    the entire graphical window you see. It's the user-friendly face of our
-    InventoryManager, allowing you to click buttons, type in boxes, and see your inventory.
-    """
+    
     def __init__(self, master_window):
-        """
-        Sets up our main application window and connects all the pieces.
-
-        Args:
-            master_window (tk.Tk): This is the very first and main window
-                                   that pops up on your screen. Everything else
-                                   will be built inside it.
-        """
+        
         self.master = master_window
         master_window.title("NeoASJ's Inventory System") # Set a generic title for the main window title bar
         master_window.geometry("900x600")
@@ -693,12 +624,7 @@ class InventoryApp:
 
 
     def _update_item_list(self):
-        """
-        This crucial function refreshes the big inventory list (the Treeview) on the right side of the app.
-        It clears everything currently displayed and then re-adds all the latest items
-        from our `InventoryManager` to keep the list up-to-date, now including 'Stock Value'.
-        It also updates the autocomplete suggestions for all comboboxes.
-        """
+        
         for item_in_tree in self.item_tree.get_children():
             self.item_tree.delete(item_in_tree)
 

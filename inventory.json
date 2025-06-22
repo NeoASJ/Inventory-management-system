@@ -1,0 +1,172 @@
+{
+    "items": {
+        "07569ea4-32a3-4b2b-977c-70fd8466efbf": {
+            "name": "oreo",
+            "quantity": 30,
+            "price": 20.0,
+            "stock_value": 600.0
+        },
+        "e0c90ce3-18ac-4510-b0e7-3c9c050e87ac": {
+            "name": "sandal soap",
+            "quantity": 20,
+            "price": 20.0,
+            "stock_value": 400.0
+        },
+        "4fc1f433-980d-4197-9c8d-074afb353aef": {
+            "name": "red label",
+            "quantity": 20,
+            "price": 30.0,
+            "stock_value": 600.0
+        },
+        "f1bdf3aa-1406-4fdf-8421-115200c19311": {
+            "name": "lays",
+            "quantity": 40,
+            "price": 10.0,
+            "stock_value": 400.0
+        },
+        "3630ba0f-d62c-48f0-94c7-638a0a1cc7cb": {
+            "name": "Dorito's nachos",
+            "quantity": 10,
+            "price": 20.0,
+            "stock_value": 200.0
+        },
+        "f2fbd9bb-06ab-4a46-b2d9-50b111842b39": {
+            "name": "Fritoo drink",
+            "quantity": 10,
+            "price": 20.0,
+            "stock_value": 200.0
+        },
+        "649fad20-d3c7-4348-a634-ce9ef77c74e0": {
+            "name": "Sunrise cofee",
+            "quantity": 50,
+            "price": 2.0,
+            "stock_value": 100.0
+        },
+        "eef135a5-55d0-4165-bd3a-52bb2f17083b": {
+            "name": "Eggs",
+            "quantity": 40,
+            "price": 12.0,
+            "stock_value": 480.0
+        },
+        "f6d43de7-f78b-4d1a-bb87-81d4c883164c": {
+            "name": "Bread",
+            "quantity": 20,
+            "price": 30.0,
+            "stock_value": 600.0
+        },
+        "1a2d927d-84a2-42e9-963c-6ce5729f344f": {
+            "name": "Milk",
+            "quantity": 10,
+            "price": 25.0,
+            "stock_value": 250.0
+        },
+        "6d026e71-7326-4d99-abd3-8efe3d126bbb": {
+            "name": "Noodles",
+            "quantity": 10,
+            "price": 30.0,
+            "stock_value": 300.0
+        },
+        "5e7782c1-9259-4fec-a560-1c6312f3943d": {
+            "name": "Tea Leaves (Chai Patti)",
+            "quantity": 10,
+            "price": 12.0,
+            "stock_value": 120.0
+        },
+        "6619d874-fbc7-49a6-8199-1bca6d837a8b": {
+            "name": "Salt",
+            "quantity": 10,
+            "price": 40.0,
+            "stock_value": 400.0
+        },
+        "7a5cc65e-98cf-4650-9204-df2526a7c321": {
+            "name": "Rice  (Basmathi)",
+            "quantity": 10,
+            "price": 100.0,
+            "stock_value": 1000.0
+        },
+        "b88b7f57-a242-4055-ae9f-bbd5397fb47b": {
+            "name": "Curd/Yogurt (Dahi)",
+            "quantity": 10,
+            "price": 20.0,
+            "stock_value": 200.0
+        },
+        "0ad17e72-4cd8-4d89-a47f-8bacf06b11e0": {
+            "name": "Maggi Noodles (small)",
+            "quantity": 30,
+            "price": 10.0,
+            "stock_value": 300.0
+        },
+        "004f3a9d-ed29-46ad-8924-ade7a58b1a5e": {
+            "name": "Maggi Noodles (medium)",
+            "quantity": 10,
+            "price": 30.0,
+            "stock_value": 300.0
+        },
+        "ec1dbf30-3e81-4a90-9734-00d1ddd7d2af": {
+            "name": "Potato Chips",
+            "quantity": 20,
+            "price": 20.0,
+            "stock_value": 400.0
+        },
+        "72809b88-918b-4500-b4cf-5653112614f9": {
+            "name": "Coca-Cola",
+            "quantity": 10,
+            "price": 20.0,
+            "stock_value": 200.0
+        },
+        "f11b718f-7a58-43a3-b070-b796aba0e3b2": {
+            "name": "Pepsi",
+            "quantity": 10,
+            "price": 5.0,
+            "stock_value": 50.0
+        },
+        "c9a4e9d4-d4bb-44ad-88ec-1dff73cdad3a": {
+            "name": "French Fries",
+            "quantity": 5,
+            "price": 30.0,
+            "stock_value": 150.0
+        },
+        "407ba05d-22dc-47bb-a606-5e8c695e94cf": {
+            "name": "Smoothie",
+            "quantity": 4,
+            "price": 10.0,
+            "stock_value": 40.0
+        },
+        "91bbca6c-608d-489d-944d-cd0379319492": {
+            "name": "Amul Cool (LASSI)",
+            "quantity": 5,
+            "price": 10.0,
+            "stock_value": 50.0
+        },
+        "50afc5f8-ce89-43d1-90d6-a7c8678bea6b": {
+            "name": "Amul Cool (Milkshake)",
+            "quantity": 10,
+            "price": 20.0,
+            "stock_value": 200.0
+        },
+        "c1706816-0ed0-48e7-b210-50671f7e7d8e": {
+            "name": "Namkeen",
+            "quantity": 5,
+            "price": 30.0,
+            "stock_value": 150.0
+        },
+        "e74fbb18-429f-4f1f-9b38-94712557959f": {
+            "name": "Pickles",
+            "quantity": 10,
+            "price": 40.0,
+            "stock_value": 400.0
+        },
+        "73c72cd3-712c-48ff-bd6e-dc929f4c8e3b": {
+            "name": "Sprite",
+            "quantity": 10,
+            "price": 40.0,
+            "stock_value": 400.0
+        },
+        "8aa67935-08f7-48d4-98a2-a9a41b34f314": {
+            "name": "CAMPA",
+            "quantity": 5,
+            "price": 20.0,
+            "stock_value": 100.0
+        }
+    }
+}

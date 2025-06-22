@@ -37,15 +37,12 @@ Run from your terminal:
 python mod.py
 
 File Structure
-""
 
+```
 ├── mod.py                # Main application script
-
 ├── inventory.json        # (Automatically created) Inventory data file
-
 └── 2.png                 # Application logo/icon
-
-""
+```
 
 Technologies Used
 Python 3.x: Core programming language.

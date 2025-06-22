@@ -49,10 +49,5 @@ User authentication.
 Undo/redo functionality.
 Barcode scanning integration.
 ### Project Demonstration
+![File Structure](<iframe width="560" height="315" src="https://www.youtube.com/embed/-d9LMpXEnCE?si=M6MKacW9igo_Jyip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
 
-[Watch the full demo video here](https://example.com/path/to/your/video.mp4)
-
-Or, if you want to include a preview image that links to the video:
-```
-[![Video Preview Image](https://placehold.co/600x300/e0e0e0/000000?text=Click+to+Watch+Video)](https://example.com/path/to/your/video.mp4)
-```

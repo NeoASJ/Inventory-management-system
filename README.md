@@ -49,5 +49,7 @@ User authentication.
 Undo/redo functionality.
 Barcode scanning integration.
 ### Project Demonstration
-### Project Demonstration
-<ifrmae> width="560" height="315" src="https://www.youtube.com/embed/-d9LMpXEnCE?si=eFRhqfTRZ-dyoGy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+https://github.com/user-attachments/assets/f363b7c0-0358-442b-86a3-09068b50b27b
+

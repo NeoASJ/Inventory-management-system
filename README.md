@@ -51,5 +51,3 @@ Barcode scanning integration.
 ### Project Demonstration
 
 
-https://github.com/user-attachments/assets/f363b7c0-0358-442b-86a3-09068b50b27b
-

@@ -1,6 +1,6 @@
 Tkinter Inventory Management System
 ```
-DEMO VIDEO AVAILABLE AT END ( GO TO END OF THIS PAGE )
+ 👇👇DEMO VIDEO AVAILABLE AT END  THIS PAGE 
 ```
 
 Project Overview
